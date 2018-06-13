@@ -17,6 +17,9 @@ This project is relying on busylight node.js API by [porsager](https://github.co
 * run `sudo ./install.sh` in terminal
 * import `busylight_mac.alfredworkflow` to your Alfred Workflows
 
+###### NOTE:
+When you use Cisco Jabber in another language than English, you need to adjust the "jabberstate" variable filter in the Alfred Workflow. Double-click on the specific filters and change the presence messages to the messages in your language (eg. for german: `Available` --> `Verfügbar`).
+
 ### usage
 
  You need to run `jabber_busylight.scpt`. While running, this will tell the Alfred Workflow the current presence state of Cisco Jabber. The Alfred Workflow will update the busylight color accordingly.
