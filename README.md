@@ -17,7 +17,7 @@ This project is relying on busylight node.js API by [porsager](https://github.co
 * run `sudo ./install.sh` in terminal
 * import `busylight_mac.alfredworkflow` to your Alfred Workflows
 
-#### NOTE:
+###### NOTE:
 When you use Cisco Jabber in another language than English, you need to adjust the "jabberstate" variable filter in the Alfred Workflow. Double-click on the specific filters and change the presence messages to the messages in your language (eg. for german: `Available` --> `Verfügbar`).
 
 ### usage
