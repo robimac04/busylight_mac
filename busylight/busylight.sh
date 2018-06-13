@@ -1,5 +1,6 @@
 #!/bin/bash
 
+BASE=/usr/local/busylight
 color=$1
 
 # quit all running busylight processes
@@ -20,26 +21,26 @@ done
 if [ $color == "green" ]; then
 
     while true; do
-	/usr/local/bin/node /Users/petersro/dev/busylight/green.js
+	/usr/local/bin/node $BASE/green.js
 	sleep 20
     done
-    
+
 elif [ $color == "red" ]; then
 
     while true; do
-        /usr/local/bin/node /Users/petersro/dev/busylight/red.js
+        /usr/local/bin/node $BASE/red.js
         sleep 20
     done
-    
+
 elif [ $color == "yellow" ]; then
-    
+
     while true; do
-        /usr/local/bin/node /Users/petersro/dev/busylight/yellow.js
+        /usr/local/bin/node $BASE/yellow.js
         sleep 20
     done
-    
+
 else
-    
+
     while true; do
 	/usr/local/bin/busylight $color
 	sleep 20
