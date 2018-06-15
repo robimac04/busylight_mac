@@ -2,7 +2,7 @@
 
 # get status
 
-status=$(osascript /Users/petersro/git/personal/busylight_mac/busylight/jabber_busylight.scpt)
+status=$(osascript /usr/local/busylight/jabber_busylight.scpt)
 
 if [[ $status == "Available" ]]; then
   /usr/local/busylight/busylight.sh green &
