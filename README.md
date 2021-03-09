@@ -1,6 +1,6 @@
 # busylight_mac
 
-Tools to get the Kuando Busylight working with Cisco Jabber and Mac.
+Tools to get the Kuando Busylight working with Cisco Jabber (verified with v12.9.4) and Mac.
 
 This project is relying on busylight node.js API by [porsager](https://github.com/porsager/busylight) and [Alfred](https://www.alfredapp.com).
 
@@ -18,7 +18,7 @@ This project is relying on busylight node.js API by [porsager](https://github.co
 * import `busylight_mac.alfredworkflow` to your Alfred Workflows
 
 ###### NOTE:
-When you use Cisco Jabber in another language than English, you need to adjust the "jabberstate" variable filter in the Alfred Workflow. Double-click on the specific filters and change the presence messages to the messages in your language (eg. for german: `Available` --> `Verfügbar`).
+This uses the tray icon to fetch the current presence status from Jabber. If it's hidden with e.g. Bartender, it still works fine, but if you remove the tray icon completely, it might not work.  
 
 ### usage
 
